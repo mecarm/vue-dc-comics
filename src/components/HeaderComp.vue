@@ -35,14 +35,11 @@ export default {
 @import '../style/variabili.scss';
 
   header{
-    width: 80%;
-    margin: auto;
+    @include center;
   }
 
   header, ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include justify($justify: Both);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     font-size: 0.9rem;

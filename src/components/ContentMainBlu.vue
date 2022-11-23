@@ -32,16 +32,12 @@ export default {
 <style lang="scss" scoped>
 @import '../style/variabili.scss';
 .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include justify($justify: Center);
     background-color: $color-primary;
     padding: 50px 0;
 
     div{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include justify($justify: Both);
         margin: 0 15px;
         font-size: 0.8rem;
         color: white;

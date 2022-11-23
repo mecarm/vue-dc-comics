@@ -11,6 +11,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+@import "../style/variabili.scss";
     .black{
         background: black;
         text-align: start;
@@ -18,8 +20,7 @@ export default {
         margin-top: 10px;
     }
     h2{
-    width: 80%;
-    margin: auto;
-    color: white;
+        @include center;
+        color: white;
   }
 </style>

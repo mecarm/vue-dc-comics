@@ -1,1 +1,23 @@
 $color-primary: #0080ff;
+
+@mixin justify($justify: Between) {
+    display: flex;
+
+    @if $justify == 'Center'{
+        justify-content: center;
+        align-items: center;
+    }
+    @else if $justify == 'Both'{
+        justify-content: space-between;
+        align-items: center;
+    }
+    @else if $justify == 'Between'{
+        justify-content: space-between;
+    }
+}
+
+@mixin center{
+    width: 80%;
+    margin: auto;
+}
+

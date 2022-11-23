@@ -94,13 +94,12 @@ footer{
         margin: auto;
         width: 80%;
         display: flex;
-        justify-content: space-between;   
-        align-items: center; 
+        @include justify($justify: Both);
+
     }
 
     .list{
-        display: flex;
-        justify-content: space-between;
+        @include justify($justify: Between);
         text-align: start;
         color: white;
 
@@ -129,15 +128,12 @@ footer{
         padding: 30px;
         
         div:first-child{
-            display: flex;
-            justify-content: space-between;
+            @include justify($justify: Between);
             width: 80%;
             margin: auto;
     }
      .follow, .icon{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include justify($justify: Both);
     }
     .follow{
         div:first-child{
