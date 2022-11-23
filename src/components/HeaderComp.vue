@@ -32,6 +32,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import '../style/variabili.scss';
 
   header{
     width: 80%;
@@ -53,8 +54,8 @@ export default {
       padding: 20px 0;
 
       &:hover{
-        color: #0E7CEB;
-        border-bottom: 3px solid #0E7CEB ;
+        color: $color-primary;
+        border-bottom: 3px solid $color-primary;
       }
     }
   }

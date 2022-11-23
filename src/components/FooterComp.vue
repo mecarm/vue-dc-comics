@@ -74,12 +74,16 @@
 </template>
 
 <script>
+
 export default {
     name: 'FooterComp'
 }
 </script>
 
 <style lang="scss" scoped>
+
+@import '../style/variabili.scss';
+
 footer{
     background-image: url('../assets/img/footer-bg.jpg');
     background-repeat: no-repeat;
@@ -139,7 +143,7 @@ footer{
     .follow{
         div:first-child{
             margin-right: 5px;
-            color: #0080ff;
+            color: $color-primary;
             width: 100px;
         }
 
@@ -151,7 +155,7 @@ footer{
 }
 button{
     padding: 10px;
-    border: 2px solid #0080ff;
+    border: 2px solid $color-primary;
     background-color: rgba(0, 0, 0, 0);
     color: white;
 }
