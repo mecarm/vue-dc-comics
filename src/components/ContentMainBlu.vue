@@ -34,7 +34,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0E7CEB;
+    background-color: #0080ff;
     padding: 50px 0;
 
     div{
