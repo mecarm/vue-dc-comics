@@ -45,7 +45,7 @@ export default {
     align-items: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   ul{
     li{

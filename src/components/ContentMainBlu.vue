@@ -30,11 +30,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../style/variabili.scss';
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0080ff;
+    background-color: $color-primary;
     padding: 50px 0;
 
     div{
@@ -42,7 +43,7 @@ export default {
         justify-content: space-between;
         align-items: center;
         margin: 0 15px;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         color: white;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
 

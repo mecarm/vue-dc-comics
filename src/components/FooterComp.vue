@@ -91,18 +91,17 @@ footer{
 
 
     .footer-bg {
-        height: 370px;
         margin: auto;
         width: 80%;
         display: flex;
-        justify-content: space-between;    
+        justify-content: space-between;   
+        align-items: center; 
     }
 
     .list{
         display: flex;
         justify-content: space-between;
         text-align: start;
-        padding: 20px 0;
         color: white;
 
         h3{
@@ -120,9 +119,9 @@ footer{
     }
 
     .dc-bg{
-        z-index: 0;
+        margin-bottom : 0 ;
         img{
-            height: 100%;
+            margin-top: -50px;
         }
 }
     .social{
