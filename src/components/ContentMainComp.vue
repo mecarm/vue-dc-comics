@@ -1,8 +1,11 @@
 <template>
   <div>
     <div class="jumbotron">
-  
+      <div class="button">
+        <button>CURRENT SERIES</button>
+      </div>
     </div>
+    
     <div class="black">
       <div class="cards">
         <FumettoCard v-for="(element, index) in fumetti" :key="index" :dettagliFumetto="element" />
@@ -107,14 +110,15 @@ export default {
           background-image: url('../assets/img/jumbotron.jpg');
           background-size: cover;
           background-repeat: no-repeat;
-          height: 400px
+          height: 400px;
+          position: relative;
         }
     
         .black {
           color: white;
           background: #1C1C1C;
           text-align: start;
-          padding: 20px 0;
+          padding: 30px 0;
     
           .cards {
             display: flex;
@@ -122,4 +126,20 @@ export default {
             @include center;
           }
         }
+
+        .button{
+            @include center;
+
+            button{
+            background: $color-primary;
+            color: white;
+            border: none;
+            padding: 10px;
+            position: absolute;
+            bottom: -20px;
+            cursor: pointer;
+            font-size: 1.3rem;
+            font-weight: bold;
+          }
+          }
 </style>
