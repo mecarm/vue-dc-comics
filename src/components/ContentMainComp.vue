@@ -1,14 +1,13 @@
 <template>
   <div>
     <div class="jumbotron">
-
+  
     </div>
     <div class="black">
       <div class="cards">
-          <FumettoCard v-for="(element, index) in fumetti" :key="index" :dettagliFumetto="element"/>
-        
+        <FumettoCard v-for="(element, index) in fumetti" :key="index" :dettagliFumetto="element" />
       </div>
-      </div>
+    </div>
   </div>
 </template>
 
@@ -102,25 +101,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 @import "../style/variabili.scss";
    
-    .jumbotron{
-      background-image: url('../assets/img/jumbotron.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 300px
-    }
-    .black{
-        color: white;
-        background: #1C1C1C;
-        text-align: start;
-        padding: 20px 0;
-
-        .cards{
-          @include justify($justify: Both);
-          flex-wrap: wrap;
-          @include center;      
+        .jumbotron {
+          background-image: url('../assets/img/jumbotron.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          height: 400px
         }
-  }
+    
+        .black {
+          color: white;
+          background: #1C1C1C;
+          text-align: start;
+          padding: 20px 0;
+    
+          .cards {
+            display: flex;
+            flex-wrap: wrap;
+            @include center;
+          }
+        }
 </style>

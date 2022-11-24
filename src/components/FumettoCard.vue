@@ -18,5 +18,11 @@ export default {
 
     .card{
         width: calc(100% / 6);
+        padding: 10px;
+        cursor: pointer;
+        
+        img{
+            width: 100%;
+        }
     }
 </style>
