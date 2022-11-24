@@ -91,9 +91,7 @@ footer{
 
 
     .footer-bg {
-        margin: auto;
-        width: 80%;
-        display: flex;
+        @include center;
         @include justify($justify: Both);
 
     }
@@ -114,6 +112,7 @@ footer{
             margin-right: 20px ;
             font-size: 0.8rem;
             line-height: 22px;
+            cursor: pointer;
         }
     }
 
@@ -129,8 +128,7 @@ footer{
         
         div:first-child{
             @include justify($justify: Between);
-            width: 80%;
-            margin: auto;
+            @include center;
     }
      .follow, .icon{
         @include justify($justify: Both);

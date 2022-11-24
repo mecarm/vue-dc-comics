@@ -36,6 +36,10 @@ export default {
 
   header{
     @include center;
+
+    img{
+      padding: 10px 0;
+    }
   }
 
   header, ul{
@@ -49,6 +53,7 @@ export default {
       list-style: none;
       margin: 10px;
       padding: 20px 0;
+      cursor: pointer;
 
       &:hover{
         color: $color-primary;
