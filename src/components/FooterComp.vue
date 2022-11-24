@@ -47,7 +47,7 @@
             </div>
         </div>
         <div class="dc-bg">
-            <img src="../assets/img/dc-logo-bg.png" alt="">
+            <!-- <img src="../assets/img/dc-logo-bg.png" alt=""> -->
         </div>
         
     </div>
@@ -100,12 +100,12 @@ footer{
         @include justify($justify: Between);
         text-align: start;
         color: white;
+        padding: 20px 0;
 
         h3{
-            margin: 10px 0;
-            
+            margin: 10px 0;   
         }
-
+        
         li{
             list-style: none;
             color: lightgray;
@@ -116,11 +116,13 @@ footer{
         }
     }
 
-    .dc-bg{
-        margin-bottom : 0 ;
-        img{
-            margin-top: -50px;
-        }
+.dc-bg{
+    background-image: url('../assets/img/dc-logo-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;        
+    width: 50%;
+    height: 350px;
 }
     .social{
         background: rgb(44, 44, 44);
