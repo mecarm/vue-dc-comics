@@ -1,7 +1,7 @@
 <template>
     <div class="card">
         <img :src="dettagliFumetto.thumb" alt="">
-        <h4>{{ dettagliFumetto.series }}</h4>
+        <h5>{{ dettagliFumetto.series }}</h5>
     </div>
 </template>
 
@@ -15,14 +15,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.card {
+    width: calc(100% / 6);
+    padding: 10px;
+    cursor: pointer;
 
-    .card{
-        width: calc(100% / 6);
-        padding: 10px;
-        cursor: pointer;
-        
-        img{
-            width: 100%;
-        }
+    img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        object-position: top;
     }
+}
 </style>
